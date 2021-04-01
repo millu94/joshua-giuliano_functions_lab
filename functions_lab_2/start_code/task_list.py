@@ -54,3 +54,13 @@ def time_taken_over_20(list):
     return time
 
 print(time_taken_over_20(tasks))
+
+# 5. Print any task with a given description
+
+def clean_windows_print(list, job):
+    
+    for task in tasks:
+        if task['description'] == job:
+            return job
+
+print(clean_windows_print(tasks, 'Clean Windows'))
