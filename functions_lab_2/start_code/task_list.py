@@ -42,3 +42,15 @@ def all_tasks(list):
     return jobs
 
 print(all_tasks(tasks))
+
+# 4. Print a list of tasks where time_taken is at least a given time
+
+def time_taken_over_20(list):
+    
+    time = []
+    for task in tasks:
+        if task['time_taken'] >= 20:
+            time.append(task['description'])
+    return time
+
+print(time_taken_over_20(tasks))
