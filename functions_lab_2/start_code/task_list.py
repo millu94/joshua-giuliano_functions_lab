@@ -8,9 +8,8 @@ tasks = [
 # 1  Print a list of uncompleted tasks
 
 def uncompleted_tasks(list, completed):
-    jobs = []
     for task in tasks:
-        if 'completed' == False:
+        if task['completed'] == False:
             return task
 
 print(uncompleted_tasks(tasks, completed))
