@@ -13,3 +13,5 @@ def uncompleted_tasks(list, completed):
         if 'completed' == False:
             return task
 
+print(uncompleted_tasks(tasks, completed))
+
